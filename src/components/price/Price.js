@@ -1,10 +1,7 @@
 import React from 'react';
 
-const Price = ({ amount, price }) => {
-    const value = ((price * 100) * amount) / 100;
-    return (
-        <div>Price: {value}</div>
+const Price = ({ amount, price }) =>  (
+        <div>Price: {amount * price}</div>
     );
-};
 
 export default Price;
